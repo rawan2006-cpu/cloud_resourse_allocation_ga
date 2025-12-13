@@ -1,0 +1,68 @@
+{
+  "baseline": {
+    "fitness": 245.37400000000002,
+    "metrics": {
+      "fitness": 245.37400000000002,
+      "makespan": 300.0,
+      "energy": 414.75,
+      "avg_utilization": 0.255,
+      "sla_violations": 10,
+      "unassigned_tasks": 10
+    },
+    "chromosome": [
+      0,
+      1,
+      2,
+      -1,
+      3,
+      4,
+      5,
+      -1,
+      6,
+      -1,
+      7,
+      -1,
+      8,
+      9,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  "ga": {
+    "fitness": 413.57599999999996,
+    "metrics": {
+      "fitness": 413.57599999999996,
+      "makespan": 600.0,
+      "energy": 579.0,
+      "avg_utilization": 0.62,
+      "sla_violations": 0,
+      "unassigned_tasks": 0
+    },
+    "chromosome": [
+      6,
+      7,
+      4,
+      9,
+      0,
+      1,
+      1,
+      2,
+      0,
+      4,
+      1,
+      0,
+      7,
+      2,
+      3,
+      5,
+      5,
+      8,
+      6,
+      5
+    ]
+  }
+}

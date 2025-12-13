@@ -1,0 +1,20 @@
+{
+  "baseline": {
+    "fitness": 245.37400000000002,
+    "makespan": 300.0,
+    "energy": 414.75,
+    "avg_utilization": 0.255,
+    "sla_violations": 10,
+    "unassigned_tasks": 10
+  },
+  "ga": {
+    "fitness": 413.57599999999996,
+    "makespan": 600.0,
+    "energy": 579.0,
+    "avg_utilization": 0.62,
+    "sla_violations": 0,
+    "unassigned_tasks": 0
+  },
+  "baseline_fitness": 245.37400000000002,
+  "ga_best_fitness": 413.57599999999996
+}

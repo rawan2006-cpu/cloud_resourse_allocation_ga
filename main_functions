@@ -1,0 +1,35 @@
+
+
+
+1) Simulation environment:
+   - acts as the virtual world or system where potential solutions evolve
+   - models hosts, VMs and tasks (entities.py)
+
+   1. initialization
+   2. Evaluation
+   3. Selection
+   4. reproduction
+   5. Iteration life (2-4 repeat)
+
+
+
+2)  Genetic Algorithm:
+   Evolves population of resource allocation solutions using:
+   - selection, crossover and mutation (ga_core.py)
+3) fitness evaluation:
+   Measures solution quality based on metrics like energy consumption, resource utilization, and task completion (fitness.py)
+
+4) Baselines:
+  Implements heuristic algorithms for comparison (heuristics.py)
+
+5) Experiment runner:
+  Automates experiments and collects results (runner.py)
+
+6) Web demo:
+  provides a Flask-based interface for live demonstration (web_demo/app.py)
+
+7) Data handling:
+  Loads real and synthetic workload traces (data/)
+
+8) Visualization:
+  (notebooks/demo_notebook.ipynb)

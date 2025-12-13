@@ -1,0 +1,82 @@
+
+Use a Genetic Algorithm to map cloud tasks/VMs to physical hosts (or schedule tasks onto VMs) to optimize multi-objective goals such as minimizing energy consumption, reducing makespan/response time, and maximizing resource utilization.
+
+- resource-allocation system (simulator + GA optimizer) that takes a workload (task/jobs trace or synthetic jobs) and produces an assignment/placement strategy. The GA will produce candidate allocations (chromosomes) and evolve them to optimize a fitness function that balances multiple objectives (e.g., energy, cost, response time, SLA violations, utilization).
+
+- VM placement / consolidation — allocate existing VMs to physical hosts and migrate/ consolidate to save energy while respecting CPU/RAM/io constraints.
+
+- classification with a small NN to pre-group tasks then GA for assignment
+
+cloud computing environments require
+ -> efficient allocation of computational resources (cpu, memory) to virtual machines (VM) and tasks
+
+the goal is
+- to optimize resource usage
+- minimize energy consumption
+- ensure quality of service
+
+This project implements a genetic algoritm to solve the resource allocation problem in a simulated environment
+
+The GA searches for near-optimal mappings of tasks to VMs and VMs to hosts, considering constraints like CPU/ Memory capacity and power consumption
+
+
+ Workflow:
+
+CSV → Task objects
+      ↓
+Baseline heuristic (First-Fit / Round-Robin)
+      ↓
+Fitness evaluation
+      ↓
+Genetic Algorithm
+      ↓
+Best solution
+      ↓
+Save results → results/
+
+
+    ---------------------------------How to run the project----------------------------------------
+
+
+## How to Run
+
+### 1. Create virtual environment
+```bash
+python -m venv .venv
+
+2. Activate venv
+
+.\.venv\Scripts\activate
+
+3. Install dependencies
+ pip install -r requirements.txt
+
+4. Run experiments
+python src/experiments/runner.py
+
+5. Run web demo
+python web_demo/app.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
